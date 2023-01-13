@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <title>TODO</title>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+    </head>
+    <body class="bg-light container">
+        <p class="h2 fw-light mt-3"><i class="text-success fas fa-tasks"></i> My Tasks </p>
+        <div class="w-100 m-auto p-3 mt-3 rounded fw-light">
+            <section class="row justify-content-around my-4">
+                <input type="text" class="form-control w-75" id="taskName" placeholder="task name">
+                <button class="col-1 btn btn-primary" id="taskBtn">Add</button>
+            </section>
+        </div>
+          
+        <div class="mx-auto rounded-4 ">
+            <div class="p-4" id="list">
+            
+            </div>
+        </div>
+
+          <div class="m-auto">
+            <a class="text-secondary text-decoration-none" id="compNum" data-bs-toggle="collapse" href="#completeTasks" role="button" aria-expanded="false" aria-controls="completeTasks"></a>
+          </div>
+        <div class="collapse multi-collapse mx-auto rounded-4" id="completeTasks">
+            <div class="p-4"  id="completeList">
+            
+            </div>
+        </div>
+        <!-- Modal -->
+        <div class="modal fade" id="compModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body mb-4 text-center fs-3 fw-light">
+                    Great job! <i class="text-danger fas fa-heart"></i>
+                </div>
+            </div>
+            </div>
+        </div>
+
+
+        <script src="js/todo.js"></script>
+        <script src="js/popper.min.js"></script>
+        <script src="js/bootstrap.min.js" ></script>
+    </body>
+</html>
